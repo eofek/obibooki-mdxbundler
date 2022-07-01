@@ -1,9 +1,9 @@
 import { useMemo } from "react";
 import Image from "next/image";
 
-import { getFiles, getFileBySlug } from "../../lib/mdx";
+import { getFiles, getFileBySlug } from "../lib/mdx";
 import { getMDXComponent } from "mdx-bundler/client";
-import MDXComponent from "../../components/MDXComponents";
+import MDXComponent from "../components/MDXComponents";
 
 export default function BlogSlug({ code, frontMatter }) {
   const Component = useMemo(() => getMDXComponent(code), [code]);

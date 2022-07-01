@@ -1,5 +1,9 @@
 module.exports = {
   reactStrictMode: true,
+  images: {
+    domains: ['res.cloudinary.com'],
+    formats: ['image/avif', 'image/webp'],
+  },
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
       Object.assign(config.resolve.alias, {
@@ -10,4 +14,6 @@ module.exports = {
     }
     return config;
   },
+
+
 };

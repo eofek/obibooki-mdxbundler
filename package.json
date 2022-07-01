@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "fs": "^0.0.1-security",
     "mdx-bundler": "^6.0.2",
     "next": "12.0.1",
     "preact": "^10.5.15",
+    "probe-image-size": "^7.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sharp": "^0.29.2"
