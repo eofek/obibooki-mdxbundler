@@ -5,6 +5,7 @@ module.exports = {
     formats: ['image/avif', 'image/webp'],
   },
   webpack: (config, { dev, isServer }) => {
+    config.resolve.fallback = { fs: false };
     if (!dev && !isServer) {
       Object.assign(config.resolve.alias, {
         react: "preact/compat",

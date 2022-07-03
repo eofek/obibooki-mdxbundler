@@ -1,16 +1,20 @@
 import Image from 'next/image'
-import { useEffect, useState } from "react";
 
-export default function Picture (props) {
+const Picture = ({src, alt, width="1024", height="768"}) => {
     return (
       <div className="my-3">
         <Image
-          src={props.src}
-          alt={props.alt}
+          src={src}
+          alt={alt}
           layout="responsive"
-          {...props}
+          width={width} 
+          height={height} 
+          loading="lazy" 
+          sizes="75vw" 
           className="rounded-xl"
         />
       </div>
     );
   };
+
+  export default Picture

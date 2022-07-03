@@ -60,7 +60,7 @@ const Home = ({ posts }) => {
         </div>
         <div className="grid grid-cols-1 gap-4 p-3 bg-gray-100 md:grid-cols-2 lg:grid-cols-3 rounded-xl">
           {posts.map((item, _idx) => (
-            <BlogCard {...posts[_idx]} key={item.slug} />
+            <p key={_idx}>{item.slug}</p>
           ))}
         </div>
       </section>

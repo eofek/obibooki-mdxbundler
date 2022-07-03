@@ -27,7 +27,7 @@ export default function BlogSlug({ code, frontMatter }) {
             </div>
             <div className="overflow-hidden rounded-xl">
               <Image
-                src={frontMatter.image}
+                src={frontMatter.heroImg}
                 width={800}
                 height={533}
                 layout="responsive"

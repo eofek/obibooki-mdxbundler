@@ -6,7 +6,7 @@ const BlogCard = (data) => {
     <div className="flex flex-col p-3 space-y-5 bg-white shadow-lg rounded-xl">
       <div className="overflow-hidden rounded-xl">
         <Image
-          src={data.image}
+          src={data.heroImg}
           width={800}
           height={533}
           layout="responsive"
