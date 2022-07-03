@@ -32,6 +32,7 @@ export default function BlogSlug({ code, frontMatter }) {
                 height={533}
                 layout="responsive"
                 alt="cover image"
+                sizes="75vw"
               />
             </div>
           </div>
