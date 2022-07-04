@@ -11,7 +11,8 @@ const MDXComponent = {
   Picture,
   Button, 
   YouTube,
-  Insta
+  Insta,
+  img: (props) => (<Image {...props} layout="responsive" loading="lazy" sizes="50vw" />)
 };
 
 export default MDXComponent;

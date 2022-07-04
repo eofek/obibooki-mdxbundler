@@ -3193,7 +3193,7 @@
   "resolved" "https://registry.npmjs.org/ignore/-/ignore-5.1.8.tgz"
   "version" "5.1.8"
 
-"image-size@1.0.0":
+"image-size@^1.0.0", "image-size@1.0.0":
   "integrity" "sha512-JLJ6OwBfO1KcA+TvJT+v8gbE6iWbj24LyDNFgFEN0lzegn6cC6a/p3NIDaepMsJjQjlUWqIC7wJv8lBFxPNjcw=="
   "resolved" "https://registry.npmjs.org/image-size/-/image-size-1.0.0.tgz"
   "version" "1.0.0"
@@ -5395,6 +5395,11 @@
     "neo-async" "^2.6.1"
     "object-assign" "^4.1.1"
 
+"react-slugify@^2.1.0":
+  "integrity" "sha512-X+kYdGP1WumAX2exool+1lwjLSZ1dDCaCzwF0KvDWHjPfCD4hxtHvok4oyZEZro2lioaR+lCtyVG8ti2Yvpnsg=="
+  "resolved" "https://registry.npmjs.org/react-slugify/-/react-slugify-2.1.0.tgz"
+  "version" "2.1.0"
+
 "react@^16.8.0 || ^17.0.0", "react@^17.0.2", "react@^17.0.2 || ^18.0.0", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@0.0.0-experimental-3c4c1c470-20211021", "react@17.0.2":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
@@ -5599,6 +5604,13 @@
   "version" "1.0.3"
   dependencies:
     "unist-util-visit" "^3.0.0"
+
+"rehype-img-size@github:ksoichiro/rehype-img-size":
+  "resolved" "git+ssh://git@github.com/ksoichiro/rehype-img-size.git#ffd967d32545bdadceaeed5f89603329991b13b7"
+  "version" "1.0.1"
+  dependencies:
+    "image-size" "^1.0.0"
+    "unist-util-visit" "^4.1.0"
 
 "rehype-parse@^8.0.2":
   "integrity" "sha512-RGw0CVt+0S6KdvpE8bbP2Db9WXclQcIX7A0ufM3QFqAhTo/ddJMQrrI2j3cijlRPZlGK8R3pRgC8U5HyV76IDw=="
@@ -6750,7 +6762,7 @@
     "unist-util-is" "^5.0.0"
     "unist-util-visit-parents" "^4.0.0"
 
-"unist-util-visit@^4.0.0":
+"unist-util-visit@^4.0.0", "unist-util-visit@^4.1.0":
   "integrity" "sha512-n7lyhFKJfVZ9MnKtqbsqkQEk5P1KShj0+//V7mAcoI6bpbUjh3C/OG8HVD+pBihfh6Ovl01m8dkcv9HNqYajmQ=="
   "resolved" "https://registry.npmjs.org/unist-util-visit/-/unist-util-visit-4.1.0.tgz"
   "version" "4.1.0"
