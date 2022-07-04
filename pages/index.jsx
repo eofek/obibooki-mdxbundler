@@ -1,7 +1,8 @@
 import Image from "next/image";
 
-import BlogCard from "../components/BlogCard";
 import { getAllFilesFrontMatter } from "../lib/mdx";
+import PostTile from '@/components/PostTile'
+
 
 const Home = ({ posts }) => {
   return (
@@ -53,15 +54,17 @@ const Home = ({ posts }) => {
           </div>
         </div>
       </section>
+
+   
       <section className="flex flex-col px-5 my-10 mt-24 space-y-7">
         {/* blog section */}
         <div className="px-3 text-5xl font-black text-gray-800 border-l-4 border-purple-500 rounded">
           <h5 className="leading-none tracking-tight">Recent Posts</h5>
         </div>
-        <div className="grid grid-cols-1 gap-4 p-3 bg-gray-100 md:grid-cols-2 lg:grid-cols-3 rounded-xl">
-          {posts.map((item, _idx) => (
-            <p key={_idx}>{item.slug}</p>
-          ))}
+        <div className="mx-auto max-w-screen-xl md:px-4 px-0">
+          <div className="flex flex-wrap -m-4 pb-32">
+          {posts.map((item, _idx) => <PostTile key={_idx} {...item} />)}
+          </div>
         </div>
       </section>
     </div>
